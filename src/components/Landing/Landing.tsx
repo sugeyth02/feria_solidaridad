@@ -5,10 +5,11 @@ import UCA from '../../../public/images/uca-logo.png'
 import Logo from '../../../public/images/logo-feria.png'
 import Image from 'next/image'
 import Footer from '../Footer/Footer'
+import Message from './Message/Message'
 
 const Landing = () => {
     const [visible, setVisible] = useState(false);
-    
+
     const listenScrollEvent = () => {
         window.scrollY > 100 ? setVisible(true) : setVisible(false)
     };
@@ -27,7 +28,7 @@ const Landing = () => {
             </div>
             <div className='landing-image'>
                 <div className='image' />
-                <div className='content'>
+                <div className='landing-content'>
                     <Image src={UCA} alt="logo" width={153} height={220} className='logo-uca' />
                     <div className='header'>
                         <Image src={Logo} alt="logo" width={203} height={217} className='logo-feria' />
@@ -35,8 +36,8 @@ const Landing = () => {
                     </div>
                 </div>
             </div>
-            <div className='test'> <h1>hi</h1></div>
-            <Footer/>
+            <div className='content'><Message /></div>
+            <Footer />
 
         </LandingContainer>
     )

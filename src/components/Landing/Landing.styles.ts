@@ -3,6 +3,8 @@ import styled from 'styled-components';
 
 export const LandingContainer = styled.div<{ show: boolean }>`
 position: relative;
+display: flex;
+flex-direction: column;
 .navbar{
     z-index: ${({ show }) => (show ? '10' : '-1')};
     background-color: transparent;
@@ -19,19 +21,14 @@ position: relative;
     }
 }
 
-.test{
+.content{
+    padding:0 110px 80px 110px ;
+    align-self:center;
+    max-width: 1400px;
     position: relative;
     margin-top: 100px;
     height: 1000px;
     top: ${({ show }) => (show ? '0' : "unset")};
-    h1{
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 48px;
-      line-height: 59px;
-      color: ${theme.colors.lightOrange};
-    }
 }
 
 .landing-image{
@@ -41,7 +38,7 @@ position: relative;
     height: ${({ show }) => (show ? '400px' : "100vh")};
     transition: all 0.5s;
     background-color: ${({ show }) => (show ? 'transparent !important' : theme.colors.blue)};
-    .content{
+    .landing-content{
         display: ${({ show }) => (show ? 'none' : "flex")};
         width: 100%;
         height: 100%;
@@ -85,7 +82,7 @@ position: relative;
 }
 @media (max-width: ${theme.breakpoints.lg}) {
     .landing-image{
-      .content{
+      .landing-content{
         padding-top: 140px;
         gap:48px;
         .logo-uca{
@@ -107,6 +104,9 @@ position: relative;
           }
          }
       }
+    }
+    .content{
+      padding: 40px 16px;
     }
   }
 `
