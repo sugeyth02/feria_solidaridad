@@ -4,6 +4,7 @@ import { LandingContainer } from './Landing.styles'
 import UCA from '../../../public/images/uca-logo.png'
 import Logo from '../../../public/images/logo-feria.png'
 import Image from 'next/image'
+import Footer from '../Footer/Footer'
 
 const Landing = () => {
     const [visible, setVisible] = useState(false);
@@ -35,6 +36,7 @@ const Landing = () => {
                 </div>
             </div>
             <div className='test'> <h1>hi</h1></div>
+            <Footer/>
 
         </LandingContainer>
     )
