@@ -6,18 +6,20 @@ position: relative;
 display: flex;
 flex-direction: column;
 gap:24px;
+
    h1{
       font-family: 'Montserrat';
       font-style: normal;
       font-weight: 500;
       font-size: 48px;
       line-height: 59px;
-      color: ${theme.colors.lightOrange};
+      color: ${theme.colors.blue};
     }
     .video{
         position: relative;
         display: flex;
         justify-content: space-between;
+        max-height: 400px;
         .message{
             width: 30%;
             display: flex;
@@ -53,6 +55,7 @@ gap:24px;
         .video{
             gap: 32px;
             flex-direction: column;
+            max-height: unset;
             .message{
                 width: 100%;
                 p, h2{
@@ -65,9 +68,9 @@ gap:24px;
     }
 `
 export const IframeStyled = styled.div`
+  overflow: hidden;
   position: relative;
-  height: 0;
-  padding-bottom: 56.25%;
+  height: 400px;
   width: 60%;
   max-height: 400px;
   iframe {
@@ -84,5 +87,6 @@ export const IframeStyled = styled.div`
   }
   @media screen and (max-width: ${theme.breakpoints.lg}) {
     width: 100%;
+    height: 250px;
   }
 `;

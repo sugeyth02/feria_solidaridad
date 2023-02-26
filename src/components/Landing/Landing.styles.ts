@@ -6,7 +6,7 @@ position: relative;
 display: flex;
 flex-direction: column;
 .navbar{
-    z-index: ${({ show }) => (show ? '10' : '-1')};
+    z-index: ${({ show }) => (show ? '3' : '-1')};
     background-color: transparent;
     top: 0;
     left: 0;
@@ -22,13 +22,15 @@ flex-direction: column;
 }
 
 .content{
-    padding:0 110px 80px 110px ;
+    position: relative;
+    padding:80px 110px ;
     align-self:center;
     max-width: 1400px;
     position: relative;
-    margin-top: 100px;
-    height: 1000px;
     top: ${({ show }) => (show ? '0' : "unset")};
+    display:flex;
+    flex-direction: column;
+    gap: 137px;
 }
 
 .landing-image{
@@ -63,9 +65,9 @@ flex-direction: column;
              font-weight: 600;
              font-size: 48px;
              line-height: 59px;
-             color: ${theme.colors.yellow};
+             color: ${theme.colors.white};
              user-select: none;
-             text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+             text-shadow: -0.3px 0 black, 0 0.3px black, 0.3px 0 black, 0 -0.3px black;
           }
         }
 
@@ -107,6 +109,7 @@ flex-direction: column;
     }
     .content{
       padding: 40px 16px;
+      gap: 47px;
     }
   }
 `

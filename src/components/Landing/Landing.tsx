@@ -6,6 +6,7 @@ import Logo from '../../../public/images/logo-feria.png'
 import Image from 'next/image'
 import Footer from '../Footer/Footer'
 import Message from './Message/Message'
+import GalleryImages from './Gallery/Gallery'
 
 const Landing = () => {
     const [visible, setVisible] = useState(false);
@@ -36,7 +37,10 @@ const Landing = () => {
                     </div>
                 </div>
             </div>
-            <div className='content'><Message /></div>
+            <div className='content'>
+                <Message /> 
+                <GalleryImages />
+            </div>
             <Footer />
 
         </LandingContainer>
