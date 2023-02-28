@@ -50,8 +50,8 @@ h2{
         .platforms{
             gap:8px;
             img{
-            width: 35px;
-            height: 35px;
+              width: 35px;
+              height: 35px;
             }
         }
     
