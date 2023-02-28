@@ -7,7 +7,7 @@ export const DropdownMenuContainer = styled.div<{ isOpen: boolean }>`
   left: ${({ isOpen }) => (isOpen ? '0' : '-100vw')};
   z-index: 1;
   min-height: calc(100vh - 151px);
-  height: 100%;
+  height: 100vh;
   width: 100vw;
   background-color: ${theme.colors.background};
   display: flex;

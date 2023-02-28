@@ -1,3 +1,4 @@
+import Landing from '@/src/components/Landing/Landing'
 import Layout from '@/src/components/Layout/Layout'
 import Head from 'next/head'
 
@@ -10,10 +11,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/logo-feria.png" />
       </Head>
-      <Layout>
-        <main>
-        </main>
-      </Layout>
+      <Landing />
     </>
   )
 }
