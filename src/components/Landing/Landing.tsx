@@ -7,6 +7,7 @@ import Image from 'next/image'
 import Footer from '../Footer/Footer'
 import Message from './Message/Message'
 import GalleryImages from './Gallery/Gallery'
+import AppsBanner from './AppsBanner/AppsBanner'
 
 const Landing = () => {
     const [visible, setVisible] = useState(false);
@@ -40,6 +41,7 @@ const Landing = () => {
             <div className='content'>
                 <Message /> 
                 <GalleryImages />
+                <AppsBanner/>
             </div>
             <Footer />
 

@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 import FsLightbox from "fslightbox-react";
 import Item from './Item/Item';
 import { GalleryContainer } from './Gallery.styles';
+import { Title } from '@/styles/Typography';
+
 const images = [
     '/images/feria-de-solidaridad.jpg',
     '/images/feria-de-solidaridad.jpg',
@@ -19,7 +21,7 @@ const GalleryImages = () => {
     });
     return (
         <GalleryContainer>
-            <h1>GALERIA DE FOTOS</h1>
+            <Title>GALERIA DE FOTOS</Title>
             <div className='images'>
                 {images.map((item, index) => <Item src={item} index={index} setToogler={setToggler} key={index} toogler={toggler.toggler} />)}
             </div>

@@ -23,7 +23,7 @@ flex-direction: column;
 
 .content{
     position: relative;
-    padding:80px 110px ;
+    padding:80px 110px 150px 110px;
     align-self:center;
     max-width: 1400px;
     position: relative;
@@ -84,6 +84,7 @@ flex-direction: column;
 }
 @media (max-width: ${theme.breakpoints.lg}) {
     .landing-image{
+      height: ${({ show }) => (show ? '400px' : "110vh")};
       .landing-content{
         padding-top: 140px;
         gap:48px;
@@ -108,7 +109,7 @@ flex-direction: column;
       }
     }
     .content{
-      padding: 40px 16px;
+      padding: 40px 16px 80px 16px;
       gap: 47px;
     }
   }
