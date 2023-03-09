@@ -15,6 +15,7 @@ export const DropdownMenuContainer = styled.div<{ isOpen: boolean }>`
   gap:60px;
   align-items: center;
   justify-content: center;
+  transition: all 0.5s;
   a{
         text-align: center;
         text-decoration: none;
