@@ -4,7 +4,11 @@ export const theme = {
         black: '#000000',
         yellow: '#F2CF66',
         lightOrange: '#F28966',
-        white:'#ffffff'
+        white: '#ffffff',
+        background: '#fcfcfc',
+        gray: '#555555',
+        lightGray:'#a8a8a7'
+        
 
     },
     breakpoints: {
